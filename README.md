@@ -55,6 +55,8 @@ Before you start, ensure you have:
 
 ## 📦 Installation
 
+> **For comprehensive setup including AWS Bedrock, Prerequisites, Troubleshooting, and more → See [INSTALLATION.md](INSTALLATION.md)**
+
 ### From PyPI (Recommended)
 ```bash
 # Create virtual environment
@@ -75,6 +77,8 @@ pip install -e .
 ```
 
 ## 🔧 Setup Appium Server
+
+> **For complete Appium setup guide including prerequisites → See [INSTALLATION.md](INSTALLATION.md)**
 
 Appium server must be running for appium-mcp to work.
 
@@ -314,11 +318,11 @@ driver.quit()
 
 ## 📚 Comprehensive Guides
 
-- **[Installation Guide](https://github.com/youcanautomate-yca/ai-driven-mobile-automation#installation)** - Detailed setup instructions
-- **[YAML Workflow Guide](https://github.com/youcanautomate-yca/ai-driven-mobile-automation#yaml-workflows)** - Complete YAML reference
-- **[Chatbot Guide](https://github.com/youcanautomate-yca/ai-driven-mobile-automation#interactive-chatbot)** - Interactive testing guide
-- **[Page Object Model](https://github.com/youcanautomate-yca/ai-driven-mobile-automation#page-object-model)** - POM best practices
-- **[API Docs](https://github.com/youcanautomate-yca/ai-driven-mobile-automation#api-documentation)** - Complete API reference
+- **[Installation Guide](INSTALLATION.md)** - Detailed setup instructions, Appium server setup, AWS Bedrock configuration
+- **[YAML Workflow Guide](YAML_GUIDE.md)** - Complete YAML workflow reference and examples
+- **[YAML Quick Start](YAML_QUICK_START.md)** - 5-minute quick start for YAML workflows
+- **[Chatbot Guide](CHATBOT_GUIDE.md)** - Interactive chatbot step-by-step guide
+- **[Development Guide](DEVELOPMENT.md)** - Contributing, testing, and building from source
 
 ## 🆘 Troubleshooting
 
