@@ -1,0 +1,9 @@
+include README.md
+include LICENSE
+include CHANGELOG.md
+include requirements.txt
+recursive-include page_objects *.py
+recursive-include prompts *.txt *.md *.yaml
+recursive-include templates *.jinja2 *.py *.js
+recursive-include docs *.md
+recursive-include generated_tests *.py
