@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "appium-mcp"
 version = "1.0.5"
-description = "AI-driven mobile test automation framework with Appium MCP server, Page Object Model, and AWS Bedrock integration"
+description = "AI-driven mobile test automation framework with Appium MCP server, Page Object Model, and AWS Bedrock integration - Write test automation in natural language with automatic page objects and test generation"
 readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT"}
@@ -71,12 +71,13 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/youcanautomate-yca/appium-mcp"
-Documentation = "https://github.com/youcanautomate-yca/appium-mcp/blob/main/README.md"
-Repository = "https://github.com/youcanautomate-yca/appium-mcp.git"
-Issues = "https://github.com/youcanautomate-yca/appium-mcp/issues"
-Changelog = "https://github.com/youcanautomate-yca/appium-mcp/releases"
-"Bug Tracker" = "https://github.com/youcanautomate-yca/appium-mcp/issues"
+Homepage = "https://github.com/youcanautomate-yca/ai-driven-mobile-automation"
+Documentation = "https://github.com/youcanautomate-yca/ai-driven-mobile-automation/blob/main/README.md"
+Installation = "https://github.com/youcanautomate-yca/ai-driven-mobile-automation/blob/main/INSTALLATION.md"
+Repository = "https://github.com/youcanautomate-yca/ai-driven-mobile-automation.git"
+Issues = "https://github.com/youcanautomate-yca/ai-driven-mobile-automation/issues"
+Changelog = "https://github.com/youcanautomate-yca/ai-driven-mobile-automation/releases"
+"Bug Tracker" = "https://github.com/youcanautomate-yca/ai-driven-mobile-automation/issues"
 
 [project.scripts]
 appium-mcp-server = "server:main"

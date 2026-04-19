@@ -55,7 +55,17 @@ Before you start, ensure you have:
 
 ## 📦 Installation
 
-> **For comprehensive setup including AWS Bedrock, Prerequisites, Troubleshooting, and more → See [INSTALLATION.md](INSTALLATION.md)**
+> **⚡ Quick Start**: 3 steps above will get you running in minutes!
+> 
+> **📖 Detailed Setup Guide**: For complete step-by-step instructions including:
+> - System requirements verification
+> - Virtual environment setup  
+> - Appium server configuration
+> - AWS Bedrock integration (AI-powered tests)
+> - Device configuration (iOS/Android)
+> - Troubleshooting guide
+>
+> **→ See [SETUP.md](SETUP.md) (Recommended for first-time users)**
 
 ### From PyPI (Recommended)
 ```bash
@@ -318,7 +328,8 @@ driver.quit()
 
 ## 📚 Comprehensive Guides
 
-- **[Installation Guide](INSTALLATION.md)** - Detailed setup instructions, Appium server setup, AWS Bedrock configuration
+- **[Complete Setup Guide](SETUP.md)** ⭐ **START HERE** - Step-by-step installation, system requirements, Appium setup, AWS Bedrock configuration, device setup, and troubleshooting for PyPI users
+- **[Installation Guide](INSTALLATION.md)** - AWS Bedrock integration details, model comparison, cost estimation, and advanced setup
 - **[YAML Workflow Guide](YAML_GUIDE.md)** - Complete YAML workflow reference and examples
 - **[YAML Quick Start](YAML_QUICK_START.md)** - 5-minute quick start for YAML workflows
 - **[Chatbot Guide](CHATBOT_GUIDE.md)** - Interactive chatbot step-by-step guide
