@@ -67,8 +67,8 @@ pip install appium-mcp
 
 ### From Source (Development)
 ```bash
-git clone https://github.com/youcanautomate-yca/appium-mcp.git
-cd appium-mcp/ai-driven-mobile-automation
+git clone https://github.com/youcanautomate-yca/ai-driven-mobile-automation.git
+cd ai-driven-mobile-automation
 python -m venv venv
 source venv/bin/activate
 pip install -e .
@@ -314,11 +314,11 @@ driver.quit()
 
 ## 📚 Comprehensive Guides
 
-- **[Installation Guide](https://github.com/youcanautomate-yca/appium-mcp#installation)** - Detailed setup instructions
-- **[YAML Workflow Guide](https://github.com/youcanautomate-yca/appium-mcp#yaml-workflows)** - Complete YAML reference
-- **[Chatbot Guide](https://github.com/youcanautomate-yca/appium-mcp#interactive-chatbot)** - Interactive testing guide
-- **[Page Object Model](https://github.com/youcanautomate-yca/appium-mcp#page-object-model)** - POM best practices
-- **[API Docs](https://github.com/youcanautomate-yca/appium-mcp#api-documentation)** - Complete API reference
+- **[Installation Guide](https://github.com/youcanautomate-yca/ai-driven-mobile-automation#installation)** - Detailed setup instructions
+- **[YAML Workflow Guide](https://github.com/youcanautomate-yca/ai-driven-mobile-automation#yaml-workflows)** - Complete YAML reference
+- **[Chatbot Guide](https://github.com/youcanautomate-yca/ai-driven-mobile-automation#interactive-chatbot)** - Interactive testing guide
+- **[Page Object Model](https://github.com/youcanautomate-yca/ai-driven-mobile-automation#page-object-model)** - POM best practices
+- **[API Docs](https://github.com/youcanautomate-yca/ai-driven-mobile-automation#api-documentation)** - Complete API reference
 
 ## 🆘 Troubleshooting
 
@@ -356,9 +356,9 @@ pip install appium-mcp
 ## 🔗 Resources
 
 - **PyPI Package**: https://pypi.org/project/appium-mcp/
-- **GitHub Repository**: https://github.com/youcanautomate-yca/appium-mcp
+- **GitHub Repository**: https://github.com/youcanautomate-yca/ai-driven-mobile-automation
 - **Appium Documentation**: https://appium.io/docs/en/2.0/
-- **Report Issues**: https://github.com/youcanautomate-yca/appium-mcp/issues
+- **Report Issues**: https://github.com/youcanautomate-yca/ai-driven-mobile-automation/issues
 
 ## 📄 License
 
@@ -373,9 +373,9 @@ Contributions welcome! Please:
 
 ## 📞 Support
 
-- **GitHub Issues**: https://github.com/youcanautomate-yca/appium-mcp/issues
+- **GitHub Issues**: https://github.com/youcanautomate-yca/ai-driven-mobile-automation/issues
 - **Email**: youcanautomate@gmail.com
-- **Documentation**: https://github.com/youcanautomate-yca/appium-mcp/wiki
+- **Documentation**: https://github.com/youcanautomate-yca/ai-driven-mobile-automation/wiki
 
 ## Architecture
 

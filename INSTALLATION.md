@@ -14,8 +14,8 @@ For development and contributing:
 
 ```bash
 # Clone the repository
-git clone https://github.com/youcanautomate-yca/appium-mcp.git
-cd appium-mcp
+git clone https://github.com/youcanautomate-yca/ai-driven-mobile-automation.git
+cd ai-driven-mobile-automation
 
 # Create virtual environment
 python -m venv venv

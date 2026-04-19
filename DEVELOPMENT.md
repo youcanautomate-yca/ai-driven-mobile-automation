@@ -11,8 +11,8 @@
 
 ```bash
 # Clone repository
-git clone https://github.com/youcanautomate-yca/appium-mcp.git
-cd appium-mcp
+git clone https://github.com/youcanautomate-yca/ai-driven-mobile-automation.git
+cd ai-driven-mobile-automation
 
 # Create and activate virtual environment
 python -m venv venv
@@ -237,6 +237,6 @@ Add to `.vscode/launch.json`:
 
 ## Support and Questions
 
-- GitHub Issues: https://github.com/youcanautomate-yca/appium-mcp/issues
-- Discussions: https://github.com/youcanautomate-yca/appium-mcp/discussions
+- GitHub Issues: https://github.com/youcanautomate-yca/ai-driven-mobile-automation/issues
+- Discussions: https://github.com/youcanautomate-yca/ai-driven-mobile-automation/discussions
 - Email: youcanautomate@gmail.com
