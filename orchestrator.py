@@ -34,7 +34,16 @@ class MobileAutomationOrchestrator:
         logger.info("Initializing Bedrock client...")
         bedrock_region = os.getenv("AWS_REGION", bedrock_region)
         bedrock_model_id = os.getenv("BEDROCK_MODEL_ID")
-        bedrock_anthropic_version = os.getenv("BEDROCK_ANTHROPIC_VERSION", "bedrock-2023-06-01")
+        bedrock_anthropic_version = os.getenv("BEDROCK_ANTHROPIC_VERSION")
+        
+        # Validate required configuration
+        if not bedrock_model_id:
+            raise ValueError(
+                "BEDROCK_MODEL_ID environment variable is not set. "
+                "Please set it before initializing the orchestrator. "
+                "Example: export BEDROCK_MODEL_ID=anthropic.claude-3-5-haiku-20241022-v1:0"
+            )
+        
         self.bedrock = BedrockClient(
             region=bedrock_region,
             model_id=bedrock_model_id,
