@@ -313,6 +313,6 @@ driver = framework.create_session(options)
 ## Next Steps
 
 - [Quick Start Guide](README.md#quick-start-interactive-chatbot)
-- [Page Object Model Guide](POM_GUIDE.md)
-- [Chatbot Guide](CHATBOT_GUIDE.md)
-- [API Documentation](README.md)
+- [Page Object Model Guide](https://github.com/youcanautomate-yca/ai-driven-mobile-automation/blob/main/POM_GUIDE.md)
+- [Chatbot Guide](https://github.com/youcanautomate-yca/ai-driven-mobile-automation/blob/main/CHATBOT_GUIDE.md)
+- [API Documentation](https://github.com/youcanautomate-yca/ai-driven-mobile-automation/blob/main/README.md)

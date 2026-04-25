@@ -505,12 +505,12 @@ chmod +x ~/.appium_home/*
 
 After successful setup:
 
-1. **Read the [README.md](README.md)** - Overview and quick reference
-2. **Explore [INSTALLATION.md](INSTALLATION.md)** - Comprehensive AWS setup
-3. **Learn [YAML_QUICK_START.md](YAML_QUICK_START.md)** - YAML workflows in 5 min
-4. **Check [YAML_GUIDE.md](YAML_GUIDE.md)** - Complete YAML reference
+1. **Read the [README.md](https://github.com/youcanautomate-yca/ai-driven-mobile-automation/blob/main/README.md)** - Overview and quick reference
+2. **Explore [INSTALLATION.md](https://github.com/youcanautomate-yca/ai-driven-mobile-automation/blob/main/INSTALLATION.md)** - Comprehensive AWS setup
+3. **Learn [YAML_QUICK_START.md](https://github.com/youcanautomate-yca/ai-driven-mobile-automation/blob/main/YAML_QUICK_START.md)** - YAML workflows in 5 min
+4. **Check [YAML_GUIDE.md](https://github.com/youcanautomate-yca/ai-driven-mobile-automation/blob/main/YAML_GUIDE.md)** - Complete YAML reference
 5. **Review [example workflows](prompts/)** - Ready-to-use templates
-6. **Check [DEVELOPMENT.md](DEVELOPMENT.md)** - For contributor setup
+6. **Check [DEVELOPMENT.md](https://github.com/youcanautomate-yca/ai-driven-mobile-automation/blob/main/DEVELOPMENT.md)** - For contributor setup
 
 ---
 

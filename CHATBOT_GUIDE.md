@@ -228,6 +228,6 @@ Generate page objects from multiple workflows:
 
 ## See Also
 
-- [Main README](README.md)
-- [YAML Workflow Guide](YAML_QUICK_START.md)
-- [Architecture](ARCHITECTURE_REFACTORED.md)
+- [Main README](https://github.com/youcanautomate-yca/ai-driven-mobile-automation/blob/main/README.md)
+- [YAML Workflow Guide](https://github.com/youcanautomate-yca/ai-driven-mobile-automation/blob/main/YAML_QUICK_START.md)
+- [Architecture](https://github.com/youcanautomate-yca/ai-driven-mobile-automation/blob/main/ARCHITECTURE_REFACTORED.md)

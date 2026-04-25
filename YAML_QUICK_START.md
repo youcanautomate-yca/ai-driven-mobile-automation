@@ -342,7 +342,7 @@ export AWS_SECRET_ACCESS_KEY=your_secret
 
 3. ✅ Run your custom test
 
-4. ✅ Read [YAML_GUIDE.md](YAML_GUIDE.md) for advanced features
+4. ✅ Read [YAML_GUIDE.md](https://github.com/youcanautomate-yca/ai-driven-mobile-automation/blob/main/YAML_GUIDE.md) for advanced features
 
 ---
 
@@ -352,7 +352,7 @@ export AWS_SECRET_ACCESS_KEY=your_secret
 |------|---------|
 | [run_yaml.py](run_yaml.py) | Execute tests from YAML files |
 | [yaml_loader.py](yaml_loader.py) | Parse and validate YAML |
-| [YAML_GUIDE.md](YAML_GUIDE.md) | Complete YAML documentation |
+| [YAML_GUIDE.md](https://github.com/youcanautomate-yca/ai-driven-mobile-automation/blob/main/YAML_GUIDE.md) | Complete YAML documentation |
 | [prompts/](prompts) | Test scenario directory |
 
 ---
