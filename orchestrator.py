@@ -3,8 +3,28 @@ import json
 import logging
 import os
 import time
+from pathlib import Path
 from typing import Dict, Any, List, Optional
 from datetime import datetime
+from dotenv import load_dotenv, find_dotenv
+
+# Load environment variables from .env file before anything else
+env_paths = [
+    Path(__file__).parent / ".env",  # Script directory
+    Path.cwd() / ".env",  # Current working directory
+    Path.home() / ".env",  # Home directory
+]
+
+for env_path in env_paths:
+    if env_path.exists():
+        load_dotenv(env_path, override=True)
+        break
+else:
+    # Fallback: try find_dotenv
+    dotenv_file = find_dotenv(raise_error_if_not_found=False)
+    if dotenv_file:
+        load_dotenv(dotenv_file, override=True)
+
 from rich.console import Console
 from rich.panel import Panel
 from rich.text import Text

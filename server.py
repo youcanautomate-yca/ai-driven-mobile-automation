@@ -1,7 +1,29 @@
 """Main MCP Server for Appium automation - Python implementation."""
 import asyncio
 import json
+import os
+from pathlib import Path
 from typing import Any, Dict, Optional
+from dotenv import load_dotenv, find_dotenv
+
+# Load environment variables from .env file
+# Try multiple locations: script dir, cwd, then home
+env_paths = [
+    Path(__file__).parent / ".env",  # Script directory
+    Path.cwd() / ".env",  # Current working directory
+    Path.home() / ".env",  # Home directory
+]
+
+for env_path in env_paths:
+    if env_path.exists():
+        load_dotenv(env_path, override=True)
+        break
+else:
+    # Fallback: try find_dotenv
+    dotenv_file = find_dotenv(raise_error_if_not_found=False)
+    if dotenv_file:
+        load_dotenv(dotenv_file, override=True)
+
 from mcp.server import Server, stdio_server_params
 from mcp.types import Tool, TextContent, ToolResult
 import logger

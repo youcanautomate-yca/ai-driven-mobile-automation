@@ -26,16 +26,34 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# Load environment variables
-# find_dotenv() searches from current dir upward, then home directory
-dotenv_file = find_dotenv(raise_error_if_not_found=False)
-if dotenv_file:
-    load_dotenv(dotenv_file)
-else:
-    # Try home directory as fallback
-    home_env = Path.home() / ".env"
-    if home_env.exists():
-        load_dotenv(home_env)
+# Load environment variables from .env file
+# CRITICAL: Must happen before orchestrator import
+import sys
+if "pytest" not in sys.modules:  # Skip in test environments
+    env_paths = [
+        Path(__file__).parent / ".env",  # Script directory  
+        Path.cwd() / ".env",  # Current working directory
+        Path.home() / ".env",  # Home directory
+        Path(__file__).parent.parent / ".env",  # Parent directory (for installed packages)
+    ]
+    
+    loaded = False
+    for env_path in env_paths:
+        if env_path.exists():
+            load_dotenv(env_path, override=True)
+            loaded = True
+            # Print to stderr to avoid interfering with normal output
+            sys.stderr.write(f"[chatbot] Loaded .env from: {env_path}\n")
+            if os.getenv("BEDROCK_MODEL_ID"):
+                sys.stderr.write(f"[chatbot] BEDROCK_MODEL_ID found\n")
+            break
+    
+    if not loaded:
+        # Fallback: try find_dotenv
+        dotenv_file = find_dotenv(raise_error_if_not_found=False)
+        if dotenv_file:
+            load_dotenv(dotenv_file, override=True)
+            sys.stderr.write(f"[chatbot] Loaded .env via find_dotenv: {dotenv_file}\n")
 
 
 from config import Config
