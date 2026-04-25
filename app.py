@@ -170,11 +170,18 @@ def main():
     
     # Initialize orchestrator
     logger.info("Initializing orchestrator...")
-    orchestrator = MobileAutomationOrchestrator(
-        platform=config.platform,
-        bedrock_region=config.bedrock.region,
-        debug=config.automation.debug
-    )
+    try:
+        orchestrator = MobileAutomationOrchestrator(
+            platform=config.platform,
+            bedrock_region=config.bedrock.region,
+            debug=config.automation.debug
+        )
+    except ValueError as e:
+        logger.error(f"Configuration Error: {e}")
+        raise SystemExit(1)
+    except Exception as e:
+        logger.error(f"Failed to initialize orchestrator: {e}")
+        raise SystemExit(1)
     
     try:
         # Interactive menu
