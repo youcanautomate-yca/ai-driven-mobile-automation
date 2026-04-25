@@ -1,7 +1,21 @@
 """Main application entry point with examples."""
 import sys
 import logging
+from pathlib import Path
 from typing import List
+from dotenv import load_dotenv
+
+# Load environment variables from multiple possible locations
+env_paths = [
+    Path.cwd() / ".env",  # Current working directory
+    Path.home() / ".env",  # Home directory
+    Path(__file__).parent / ".env",  # Script directory
+]
+for env_path in env_paths:
+    if env_path.exists():
+        load_dotenv(env_path)
+        break
+
 from orchestrator import MobileAutomationOrchestrator
 from config import Config
 

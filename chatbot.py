@@ -26,8 +26,17 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# Load environment
-load_dotenv()
+# Load environment from multiple possible locations
+env_paths = [
+    Path.cwd() / ".env",  # Current working directory
+    Path.home() / ".env",  # Home directory
+    Path(__file__).parent / ".env",  # Script directory
+]
+for env_path in env_paths:
+    if env_path.exists():
+        load_dotenv(env_path)
+        logger.debug(f"Loaded .env from {env_path}")
+        break
 
 from config import Config
 from orchestrator import MobileAutomationOrchestrator

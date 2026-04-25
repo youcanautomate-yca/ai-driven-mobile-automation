@@ -2,6 +2,7 @@
 import sys
 import os
 import logging
+from pathlib import Path
 from typing import Any, Dict
 from dotenv import load_dotenv
 from rich.logging import RichHandler
@@ -21,8 +22,16 @@ logging.basicConfig(
     handlers=[RichHandler(rich_tracebacks=True, show_time=False, omit_repeated_times=True)]
 )
 
-# Load environment variables from .env file
-load_dotenv()
+# Load environment variables from multiple possible locations
+env_paths = [
+    Path.cwd() / ".env",  # Current working directory
+    Path.home() / ".env",  # Home directory
+    Path(__file__).parent / ".env",  # Script directory
+]
+for env_path in env_paths:
+    if env_path.exists():
+        load_dotenv(env_path)
+        break
 
 from orchestrator import MobileAutomationOrchestrator
 from config import Config
