@@ -10,7 +10,7 @@ import logging
 import subprocess
 from typing import Dict, List, Any, Optional
 from pathlib import Path
-from dotenv import load_dotenv
+from dotenv import load_dotenv, find_dotenv
 from rich.console import Console
 from rich.panel import Panel
 from rich.prompt import Prompt
@@ -26,17 +26,17 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# Load environment from multiple possible locations
-env_paths = [
-    Path.cwd() / ".env",  # Current working directory
-    Path.home() / ".env",  # Home directory
-    Path(__file__).parent / ".env",  # Script directory
-]
-for env_path in env_paths:
-    if env_path.exists():
-        load_dotenv(env_path)
-        logger.debug(f"Loaded .env from {env_path}")
-        break
+# Load environment variables
+# find_dotenv() searches from current dir upward, then home directory
+dotenv_file = find_dotenv(raise_error_if_not_found=False)
+if dotenv_file:
+    load_dotenv(dotenv_file)
+else:
+    # Try home directory as fallback
+    home_env = Path.home() / ".env"
+    if home_env.exists():
+        load_dotenv(home_env)
+
 
 from config import Config
 from orchestrator import MobileAutomationOrchestrator

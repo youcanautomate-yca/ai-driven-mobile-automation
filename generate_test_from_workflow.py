@@ -4,10 +4,19 @@ import sys
 import os
 import json
 from datetime import datetime
-from dotenv import load_dotenv
+from pathlib import Path
+from dotenv import load_dotenv, find_dotenv
 
 # Load environment variables
-load_dotenv()
+# find_dotenv() searches from current dir upward, then home directory
+dotenv_file = find_dotenv(raise_error_if_not_found=False)
+if dotenv_file:
+    load_dotenv(dotenv_file)
+else:
+    # Try home directory as fallback
+    home_env = Path.home() / ".env"
+    if home_env.exists():
+        load_dotenv(home_env)
 
 from mcp_client import MCPClient
 from tools_test_generation import appium_generate_tests
