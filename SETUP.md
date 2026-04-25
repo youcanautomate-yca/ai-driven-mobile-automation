@@ -59,14 +59,14 @@ mkdir my_appium_project
 cd my_appium_project
 
 # Create virtual environment
-python -m venv venv
+python -m venv .venv
 
 # Activate virtual environment
 # On macOS/Linux:
-source venv/bin/activate
+source .venv/bin/activate
 
 # On Windows:
-# venv\Scripts\activate
+# .venv\Scripts\activate
 ```
 
 ### Step 2: Install appium-mcp from PyPI
@@ -273,7 +273,7 @@ EXPLICIT_WAIT=15
 ### Step 1: Verify AWS Credentials
 
 ```bash
-# Terminal 2: In your project directory (with venv activated)
+# Terminal 2: In your project directory (with .venv activated)
 python -c "
 import boto3
 import os
@@ -345,7 +345,7 @@ print(f'✓ Model response: {result[\"content\"][0][\"text\"][:50]}...')
 ### Option 1: Interactive Chatbot (Easiest)
 
 ```bash
-# Terminal 2: With venv activated
+# Terminal 2: With .venv activated
 appium-mcp-chatbot
 
 # Follow the interactive prompts to:
@@ -481,9 +481,9 @@ emulator -avd emulator_name
 **Solution:**
 ```bash
 # Reinstall in clean environment
-deactivate  # Exit current venv
-python -m venv fresh_venv
-source fresh_venv/bin/activate
+deactivate  # Exit current .venv
+python -m venv .venv
+source .venv/bin/activate
 pip install --upgrade pip
 pip install appium-mcp
 ```
@@ -531,7 +531,7 @@ After successful setup:
 
 ```bash
 # Activate virtual environment
-source venv/bin/activate
+source .venv/bin/activate
 
 # Start Appium server (Terminal 1)
 appium

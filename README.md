@@ -47,19 +47,21 @@ Before you start, ensure you have:
 ### From PyPI (Recommended)
 ```bash
 # Create virtual environment
-python -m venv myenv
-source myenv/bin/activate  # On Windows: myenv\Scripts\activate
+python -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 
 # Install appium-mcp
 pip install appium-mcp
 ```
 
+> **📖 Detailed PyPI Installation Guide**: See [PYPI_INSTALL.md](https://github.com/youcanautomate-yca/ai-driven-mobile-automation/blob/main/PYPI_INSTALL.md) for complete step-by-step instructions
+
 ### From Source (Development)
 ```bash
 git clone https://github.com/youcanautomate-yca/ai-driven-mobile-automation.git
 cd ai-driven-mobile-automation
-python -m venv venv
-source venv/bin/activate
+python -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 pip install -e .
 ```
 
