@@ -42,7 +42,7 @@ Before you start, ensure you have:
 > - Device configuration (iOS/Android)
 > - Troubleshooting guide
 >
-> **→ See [SETUP.md](SETUP.md) (Recommended for first-time users)**
+> **→ See [SETUP.md](https://github.com/youcanautomate-yca/ai-driven-mobile-automation/blob/main/SETUP.md) (Recommended for first-time users)**
 
 ### From PyPI (Recommended)
 ```bash
@@ -65,7 +65,7 @@ pip install -e .
 
 ## 🔧 Setup Appium Server
 
-> **For complete Appium setup guide including prerequisites → See [INSTALLATION.md](INSTALLATION.md)**
+> **For complete Appium setup guide including prerequisites → See [INSTALLATION.md](https://github.com/youcanautomate-yca/ai-driven-mobile-automation/blob/main/INSTALLATION.md)**
 
 Appium server must be running for appium-mcp to work.
 
@@ -305,12 +305,12 @@ driver.quit()
 
 ## 📚 Comprehensive Guides
 
-- **[Complete Setup Guide](SETUP.md)** ⭐ **START HERE** - Step-by-step installation, system requirements, Appium setup, AWS Bedrock configuration, device setup, and troubleshooting for PyPI users
-- **[Installation Guide](INSTALLATION.md)** - AWS Bedrock integration details, model comparison, cost estimation, and advanced setup
-- **[YAML Workflow Guide](YAML_GUIDE.md)** - Complete YAML workflow reference and examples
-- **[YAML Quick Start](YAML_QUICK_START.md)** - 5-minute quick start for YAML workflows
-- **[Chatbot Guide](CHATBOT_GUIDE.md)** - Interactive chatbot step-by-step guide
-- **[Development Guide](DEVELOPMENT.md)** - Contributing, testing, and building from source
+- **[Complete Setup Guide](https://github.com/youcanautomate-yca/ai-driven-mobile-automation/blob/main/SETUP.md)** ⭐ **START HERE** - Step-by-step installation, system requirements, Appium setup, AWS Bedrock configuration, device setup, and troubleshooting for PyPI users
+- **[Installation Guide](https://github.com/youcanautomate-yca/ai-driven-mobile-automation/blob/main/INSTALLATION.md)** - AWS Bedrock integration details, model comparison, cost estimation, and advanced setup
+- **[YAML Workflow Guide](https://github.com/youcanautomate-yca/ai-driven-mobile-automation/blob/main/YAML_GUIDE.md)** - Complete YAML workflow reference and examples
+- **[YAML Quick Start](https://github.com/youcanautomate-yca/ai-driven-mobile-automation/blob/main/YAML_QUICK_START.md)** - 5-minute quick start for YAML workflows
+- **[Chatbot Guide](https://github.com/youcanautomate-yca/ai-driven-mobile-automation/blob/main/CHATBOT_GUIDE.md)** - Interactive chatbot step-by-step guide
+- **[Development Guide](https://github.com/youcanautomate-yca/ai-driven-mobile-automation/blob/main/DEVELOPMENT.md)** - Contributing, testing, and building from source
 
 ## 🆘 Troubleshooting
 
@@ -533,8 +533,8 @@ class LoginScreen:
 - **Multi-Platform** - iOS and Android
 
 ### YAML Guides
-- [YAML Quick Start](YAML_QUICK_START.md) - 5-minute guide
-- [YAML Comprehensive Guide](YAML_GUIDE.md) - Full reference
+- [YAML Quick Start](https://github.com/youcanautomate-yca/ai-driven-mobile-automation/blob/main/YAML_QUICK_START.md) - 5-minute guide
+- [YAML Comprehensive Guide](https://github.com/youcanautomate-yca/ai-driven-mobile-automation/blob/main/YAML_GUIDE.md) - Full reference
 - [Example Workflows](prompts/) - Ready-to-use examples
 
 ## Usage Example
