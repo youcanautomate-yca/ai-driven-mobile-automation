@@ -32,7 +32,8 @@ class MobileAutomationOrchestrator:
         
         # Initialize clients
         logger.info("Initializing Bedrock client...")
-        bedrock_model_id = os.getenv("BEDROCK_MODEL_ID", "anthropic.claude-3-5-haiku-20241022-v1:0")
+        bedrock_region = os.getenv("AWS_REGION", bedrock_region)
+        bedrock_model_id = os.getenv("BEDROCK_MODEL_ID")
         bedrock_anthropic_version = os.getenv("BEDROCK_ANTHROPIC_VERSION", "bedrock-2023-06-01")
         self.bedrock = BedrockClient(
             region=bedrock_region,

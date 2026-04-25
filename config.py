@@ -9,6 +9,7 @@ class BedrockConfig:
     def __init__(self):
         self.region = os.getenv("AWS_REGION", "us-east-1")
         self.model_id = os.getenv("BEDROCK_MODEL_ID", "anthropic.claude-3-5-haiku-20241022-v1:0")
+        self.anthropic_version = os.getenv("BEDROCK_ANTHROPIC_VERSION", "bedrock-2023-06-01")
         self.max_tokens = int(os.getenv("BEDROCK_MAX_TOKENS", "2000"))
 
 
@@ -84,6 +85,7 @@ class Config:
             "bedrock": {
                 "region": self.bedrock.region,
                 "model_id": self.bedrock.model_id,
+                "anthropic_version": self.bedrock.anthropic_version,
                 "max_tokens": self.bedrock.max_tokens
             },
             "appium": {

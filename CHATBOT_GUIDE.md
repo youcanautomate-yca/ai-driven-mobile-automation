@@ -2,18 +2,6 @@
 
 The `appium-mcp` chatbot is an interactive tool for mobile app testing automation. It guides you through two phases:
 
-## Quick Start
-
-```bash
-appium-mcp-chatbot
-```
-
-Or directly with Python:
-
-```bash
-python chatbot.py
-```
-
 ## Features
 
 ### Phase 1: App Exploration & Page Object Generation

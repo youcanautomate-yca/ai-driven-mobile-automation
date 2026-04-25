@@ -10,33 +10,6 @@ Instead of entering prompts interactively, you can define complete test scenario
 - **Repeatability** - Run the same tests consistently
 - **Complex workflows** - Multi-step test scenarios defined clearly
 
-## Quick Start
-
-### 1. Run an Existing Example
-
-```bash
-python run_yaml.py prompts/01-screenshot.yml
-```
-
-### 2. Create Your Own YAML File
-
-Create a file like `prompts/my-test.yml`:
-
-```yaml
-name: "My Test"
-description: "What this test does"
-platform: ios
-prompt: "Your test prompt here"
-```
-
-### 3. Execute It
-
-```bash
-python run_yaml.py prompts/my-test.yml
-```
-
----
-
 ## YAML Format
 
 ### Single Prompt (Simple Test)

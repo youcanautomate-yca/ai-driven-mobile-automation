@@ -6,27 +6,6 @@ Professional mobile test automation framework with AI-powered test generation, P
 **Python Version**: 3.8+  
 **License**: MIT
 
-## 🚀 Quick Start (3 Steps)
-
-### 1. Install the Package
-```bash
-pip install appium-mcp
-```
-
-### 2. Start Appium Server (in separate terminal)
-```bash
-# Install Appium globally (one-time)
-npm install -g appium
-
-# Start Appium server
-appium --address localhost --port 4723
-```
-
-### 3. Run Interactive Chatbot
-```bash
-appium-mcp-chatbot
-```
-
 ## ✨ Features
 
 - **Interactive Chatbot**: Walk through your app testing in natural language
@@ -36,9 +15,9 @@ appium-mcp-chatbot
 - **Multi-Platform**: iOS and Android support
 - **Element Discovery**: Automatic element locator generation
 - **Screenshot Capture**: Automatic screenshots at each step
-- **AWS Integration**: Use Claude AI via Bedrock for test generation (optional)
+- **AWS Integration**: Use Claude AI via Bedrock for test generation
 
-## 📋 Prerequisites
+## � Prerequisites
 
 Before you start, ensure you have:
 
@@ -55,8 +34,6 @@ Before you start, ensure you have:
 
 ## 📦 Installation
 
-> **⚡ Quick Start**: 3 steps above will get you running in minutes!
-> 
 > **📖 Detailed Setup Guide**: For complete step-by-step instructions including:
 > - System requirements verification
 > - Virtual environment setup  
