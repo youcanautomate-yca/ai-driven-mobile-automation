@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "appium-mcp"
-version = "1.0.10"
+version = "1.0.11"
 description = "AI-driven mobile test automation framework with Appium MCP server, Page Object Model, and AWS Bedrock integration - Write test automation in natural language with automatic page objects and test generation"
 readme = "README.md"
 requires-python = ">=3.8"

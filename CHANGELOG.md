@@ -5,6 +5,34 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.11] - 2024-12-19
+
+### Fixed
+- **Improved .env File Discovery**: Replace `load_dotenv()` with `find_dotenv()` for robust environment file discovery
+  - Now searches up the directory tree from current directory
+  - Falls back to home directory (~/.env)
+  - Fixes CLI command issue where .env couldn't be found from arbitrary working directories
+  - Applied to: chatbot.py, run_yaml.py, app.py, generate_test_from_workflow.py
+
+## [1.0.10] - 2024-12-18
+
+### Fixed
+- **Hardcoded Model Names Removed**: All hardcoded model references eliminated from codebase
+  - orchestrator.py: Removed default `anthropic.claude-3-5-haiku-20241022-v1:0`
+  - bedrock_client.py: Removed default `anthropic.claude-3-sonnet-20240229-v1:0`
+  - All models now require BEDROCK_MODEL_ID environment variable
+- **Environment Variable Validation**: Added strict validation for required configuration
+  - BEDROCK_MODEL_ID: Required for Bedrock client initialization
+  - Clear error messages guide users to set missing variables
+- **Error Handling in Entry Points**: Added try-except blocks with helpful diagnostics
+  - run_yaml.py: Graceful error handling for orchestrator initialization
+  - app.py: Clear error messages for missing configuration
+  - chatbot.py: Improved error context for CLI usage
+- **Configuration Files**: Removed Quick Start sections recommending hardcoded defaults
+  - README.md: Removed Quick Start section (30 lines)
+  - YAML_GUIDE.md: Removed Quick Start subsection (32 lines)
+  - CHATBOT_GUIDE.md: Removed Quick Start subsection (10 lines)
+
 ## [1.0.0] - 2026-04-17
 
 ### Added
