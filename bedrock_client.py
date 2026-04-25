@@ -129,26 +129,24 @@ class BedrockClient:
         
         Args:
             region: AWS region
-            model_id: Model ID to use. If None, checks BEDROCK_MODEL_ID env var,
-                     then falls back to Claude 3 Sonnet (better on-demand support).
-                     For Haiku, you may need to use an inference profile via
-                     BEDROCK_INFERENCE_PROFILE_ARN env var.
+            model_id: Model ID to use. If None, checks BEDROCK_MODEL_ID env var
             max_tokens: Maximum tokens for response
-            anthropic_version: Bedrock API version
+            anthropic_version: Bedrock API version. If None, checks BEDROCK_ANTHROPIC_VERSION env var
         """
         self.region = region
-        # Support environment variable override for model ID
-        self.model_id = model_id or os.getenv(
-            "BEDROCK_MODEL_ID",
-            "anthropic.claude-3-sonnet-20240229-v1:0"  # Better on-demand support than Haiku
-        )
+        # Use environment variable or provided parameter
+        self.model_id = model_id or os.getenv("BEDROCK_MODEL_ID")
         self.max_tokens = max_tokens
         # Try to use inference profile if available (recommended for Haiku)
         self.inference_profile_arn = os.getenv("BEDROCK_INFERENCE_PROFILE_ARN")
-        self.anthropic_version = anthropic_version or os.getenv(
-            "BEDROCK_ANTHROPIC_VERSION",
-            "bedrock-2024-06-04"
-        )
+        self.anthropic_version = anthropic_version or os.getenv("BEDROCK_ANTHROPIC_VERSION")
+        
+        # Validate model_id is configured
+        if not self.model_id:
+            raise ValueError(
+                "BEDROCK_MODEL_ID environment variable must be set. "
+                "Example: export BEDROCK_MODEL_ID=anthropic.claude-3-5-haiku-20241022-v1:0"
+            )
         
         try:
             self.client = boto3.client("bedrock-runtime", region_name=region)
